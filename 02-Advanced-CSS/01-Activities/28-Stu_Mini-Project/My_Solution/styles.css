@@ -1,0 +1,143 @@
+body {
+    border: 2px solid;
+    background-color: darkgray ;
+}
+header {
+ text-align: center;
+}
+
+h1 {
+    color: darkslategrey;
+}
+header p {
+    text-align: center;
+    font-size: 22px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+section {
+    border: 1px solid;
+    flex: 3 200px;
+    text-align: center;
+    margin: 10px;
+    min-width: 30%;
+    margin-bottom: 40px;
+    background-color: darkslategrey;
+}
+
+section p {
+    height: 25px;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+main h2 {
+    position: relative;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -17px;
+}
+
+pre {
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 10px;
+    height:auto;
+    width: auto;
+    user-select: all;
+}
+
+.flexrow:hover {
+    color: #360101;
+    background: linear-gradient(45deg, #FF0000, #046620);
+    font-size: 150%;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 30px 
+    white, 0 0 45px
+    white;
+}
+
+.flexcolumn:hover {
+    color: #5C2600;
+    background: linear-gradient(45deg, #F56700,#00E9FF);
+    font-size: 150%;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 30px 
+    white, 0 0 45px
+    white;
+}
+
+.grid:hover {
+    color: #800059;
+    background: linear-gradient(45deg, #F5E400,#3600B3);
+    font-size: 150%;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 30px 
+    white, 0 0 45px
+    white;
+}
+
+.gradients:hover {
+    color: blue;
+    background: linear-gradient(45deg, #F500EF,#6FFF26);
+    font-size: 150%;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 30px 
+    white, 0 0 45px
+    white;
+}
+
+.glow:hover {
+    color: #184E4D;
+    background: linear-gradient(45deg, #FFF301,#FF0900);
+    font-size: 150%;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 30px 
+    white, 0 0 45px
+    white;
+}
+
+.overlay:hover {
+    color: #4F194A;
+    background: linear-gradient(45deg, #44F500,#00E9FF);
+    font-size: 150%;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 30px 
+    white, 0 0 45px
+    white;
+}
+
+@media screen and (max-width: 991px) {
+    section {
+        flex-direction: column;
+        min-width: 40%
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
