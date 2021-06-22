@@ -1,0 +1,57 @@
+/* :root {
+    
+} */
+
+body {
+    text-align: center;
+}
+
+header {
+    text-align: left;
+    display: flex;
+    flex-direction: row
+}
+
+#intro {
+    position: relative;
+    left: 40px;
+    top: 15px;
+
+}
+
+nav {
+    float: right;
+    background-color: #443AD6;
+    height: 60px;
+    width: 65%;
+    font-size: 25px;
+}
+
+/* Navigation links */
+nav a {
+    padding: 5%;
+}
+
+nav a:hover {
+    background-color: #0083FA;
+    box-shadow: 0px 5px 5px 5px #92F0FA;
+}
+
+#headshot {
+    height: 300px;
+    float: left;
+    margin-top: 100px;
+}
+
+.about {
+    float: right;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
