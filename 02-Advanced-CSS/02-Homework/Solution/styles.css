@@ -9,7 +9,9 @@ body {
 header {
     text-align: left;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    background: linear-gradient(180deg, #A39A98, #2B2928);
+    padding-left: 20px;
 }
 
 #intro {
@@ -25,11 +27,13 @@ nav {
     height: 60px;
     width: 65%;
     font-size: 25px;
+    margin-top: 5px;
 }
 
 /* Navigation links */
 nav a {
     padding: 5%;
+    /* border-left: 1px solid black; */
 }
 
 nav a:hover {
@@ -38,20 +42,47 @@ nav a:hover {
 }
 
 #headshot {
-    height: 300px;
+    height: 400px;
     float: left;
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-left: 70px;
+    border-radius: 50px;
+}
+
+.introText {
+    margin-top: 150px;
 }
 
 .about {
     float: right;
-    position: relative;
-    margin-top: 100px;
+    position:relative;
+    width: 100%;
 }
 
+.work {
+    position: relative;
+    margin-top: 620px;
+}
 
+.myWork {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 0;
+    flex: 3 200px;
+    /* max-width: 90%; */
+}
 
+#sample1 {
+    width: 93%;
+    border: 3px solid orange;
+    margin: 50px;
 
+}
 
-
-
+#sample2, #sample3, #sample4 {
+    width: 32%;
+    position: relative;
+    border: 3px solid orange;
+    margin: 7px;
+}
