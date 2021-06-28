@@ -21,6 +21,7 @@ header h1, h3 {
     color: #ffc300;
 }
 
+/* TODO: Figure out how to trim this to fit the screen */
 .diagonal {
     content: "";
     display:block;
@@ -105,21 +106,20 @@ p {
     flex-direction: row;
     flex-basis: 0;
     flex: 3 200px;
-    /* max-width: 90%; */
 }
 
 #sample1 {
     width: 93%;
     border: 3px solid black;
     margin: 50px;
-
 }
 
 #sample2, #sample3, #sample4 {
-    width: 32%;
+    width: 400px;
     position: relative;
     border: 3px solid black;
     margin: 7px;
+    justify-content: center;
 }
 
 .contact {
@@ -136,3 +136,21 @@ p {
 .contact h2 {
     font-size: 35px;
 }
+
+@media screen and (min-width: 991px) {
+    section {
+        flex-direction: column;
+        min-width: 40%
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+

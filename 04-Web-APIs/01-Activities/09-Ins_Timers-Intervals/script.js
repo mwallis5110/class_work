@@ -1,3 +1,4 @@
+
 // Selects element by class
 var timeEl = document.querySelector(".time");
 
