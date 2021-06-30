@@ -1,6 +1,6 @@
 // Use Moment.js to format the date and assign to the declared variable.
 // TODO: 1. What is your graduation date in the following format: Jan 1st, 1999?
-var gradDate;
+var gradDate = moment();
 $("#1a").text(gradDate);
 
 // TODO: 2. What day of the week will 1/1/2022 be?
