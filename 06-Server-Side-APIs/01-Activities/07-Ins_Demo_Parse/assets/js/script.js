@@ -13,7 +13,8 @@ fetch('https://api.github.com/orgs/twitter/repos')
   })
   .then(function (data) {
     console.log('Twitter Repositories: Names only \n----------');
-    for (var i = 0; i < data.length; i++) {
-      console.log(data[i].name);
+    for (var i = 0; i < 5; i++) {
+      console.log(data[i].url);
+      console.log(data[i].user.login);
     }
   });
